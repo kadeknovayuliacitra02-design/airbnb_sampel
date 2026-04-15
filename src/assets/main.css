@@ -1,0 +1,454 @@
+.space-home {
+  margin-left: 300px;
+}
+.space-location {
+  margin-left: 235px;
+}
+.box-search {
+  border: 1px solid;
+  width: 50px;
+  border-radius: 45px;
+  width: 775px;
+  padding-left: 30px;
+}
+.box-icon-search {
+  border: 1px solid;
+  width: 45px;
+  border-radius: 50px;
+  padding: 7px;
+  padding-left: 13px;
+  height: 45px;
+  background-color: rgb(239, 19, 19);
+}
+.color-icon-search {
+  color: white;
+}
+.space-host {
+  margin-left: 375px;
+}
+.box-list {
+  border: 1px solid;
+  border-radius: 45px;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  padding-left: 6px;
+  background-color: rgba(197, 190, 190, 0.564);
+}
+.box-globe {
+  border: 1px solid;
+  border-radius: 45px;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  padding-left: 6px;
+  background-color: rgba(197, 190, 190, 0.564);
+}
+.box-arrow-right {
+  border: 1px solid;
+  border-radius: 45px;
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  padding-left: 6px;
+  background-color: rgba(207, 206, 206, 0.564);
+}
+
+.box-room {
+  border-radius: 5px;
+}
+.mt-room {
+  margin-top: -20px;
+}
+.globe-footer {
+  margin-top: -6px;
+  margin-right: 5px;
+}
+#bg-footer {
+  background-color: rgb(236, 234, 234);
+}
+.fs-des-home {
+  font-size: 13px;
+}
+.modal-dialog.modal-right {
+  position: fixed !important;
+  top: 70px;
+  right: 50px;
+  margin: 0 !important;
+  height: 100vh;
+  width: 300px; /* ubah ukuran di sini */
+  max-width: 100%;
+  transform: none !important;
+}
+.click {
+  cursor: pointer;
+}
+.fs-icon-modal {
+  font-size: 95px;
+}
+.box-modal {
+  border: 1px solid;
+  height: 305px;
+  width: 250px;
+  border-radius: 20px;
+}
+.icon-posision {
+  padding-top: 65px;
+  padding-left: 75px;
+}
+.btn-modal {
+  height: 35px;
+  width: 90px;
+  border: 2px solid;
+  border-radius: 8px;
+  margin-left: 675px;
+}
+.input-size {
+  height: 50px;
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.btn-login {
+  height: 50px;
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid;
+  color: white;
+  background-color: rgb(247, 56, 56);
+}
+.box-search-help {
+  border: 1px solid;
+  border-radius: 45px;
+  width: 475px;
+  padding-left: 30px;
+  height: 65px;
+  margin-left: 385px;
+}
+.btn-login-help {
+  height: 50px;
+  width: 515px;
+  border-radius: 10px;
+  border: 1px solid;
+  color: white;
+  background-color: rgb(233, 63, 63);
+}
+.box-help {
+  border: 1px solid;
+  border-radius: 25px;
+}
+.btn-help {
+  height: 50px;
+  width: 405px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.router-style {
+  color: black;
+  text-decoration: none;
+}
+.box-review {
+  border: 1px solid;
+  height: 80px;
+  width: 651px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.box-languange-detail {
+  width: 530px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #8080801f;
+}
+.btn-show-more-detail {
+  border: 1px solid;
+  height: 45px;
+  width: 120px;
+  border-radius: 10px;
+}
+.calendar {
+  width: 310px;
+  font-family: sans-serif;
+}
+
+/* HEADER */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* GRID */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+/* HARI */
+.header div {
+  font-size: 14px;
+  color: #717171;
+  margin-bottom: 10px;
+}
+
+/* TANGGAL */
+.date {
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.date:hover {
+  background: #f2f2f2;
+}
+
+/* SELECTED */
+.active {
+  background: black;
+  color: white;
+}
+
+/* RANGE */
+.range {
+  background: #eaeaea;
+  border-radius: 10px;
+}
+.ms-date {
+  margin-left: 500px;
+}
+.box-order {
+  border: 1px solid;
+  padding: 15px;
+  border-radius: 15px;
+}
+.box-cancel-order {
+  border-radius: 10px;
+  background-color: #80808017;
+  height: 45px;
+  width: 350px;
+}
+.btn-order {
+  height: 50px;
+  width: 300px;
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(254, 67, 67);
+  /* margin-left: 20px; */
+}
+.desc-text {
+  margin-top: 20px;
+  max-width: 700px; /* biar tidak terlalu panjang */
+  line-height: 1.6;
+}
+.box-fasility {
+  border: 1px solid;
+  width: 165px;
+  padding: 10px;
+  height: 45px;
+  border-radius: 15px;
+}
+.btn-more-detail {
+  width: 185px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(234, 233, 233);
+}
+.btn-host-message{
+  width: 285px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(234, 233, 233);
+}
+
+
+/* BOX PRICE */
+.box-host-detail {
+  position: sticky;   /* INI KUNCI NYA */
+  top: 100px;         /* jarak dari atas saat scroll */
+  width: 350px;
+  height: 250px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.mt-space{
+  margin-top: -26px;
+}
+.mt-host-space{
+  margin-top: -10px;
+}
+.order-wrapper {
+  width: 35%;
+  padding-left: 30px;
+    margin-left: 715px;
+    margin-top: -260px;
+}
+
+.box-price {
+  position: sticky;
+  
+  width: 375px;
+    height: 415px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.box-price-trip {
+  position: sticky;
+  
+  width: 375px;
+  height: 95px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.btn-date-trip{
+  color: white;
+    background-color: #e62828;
+    border-radius: 30px;
+    height: 45px;
+    width: 105px;
+    padding-top: 0px;
+}
+.box-dates {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 15px;
+  height: 75px;
+  
+}
+.btn-review{
+  height: 45px;
+    width: 765px;
+    border-radius: 20px;
+    background-color: #f4f2f2;
+}
+.btn-message-host{
+  height: 45px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #80808030;
+}
+#map1 {
+  height: 45px;
+  width: 55px;
+}
+.box-service{
+  position: sticky;
+  
+  width: 625px;
+  height: 135px;
+  padding-left: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.btn-show{
+    height: 45px;
+    width: 627px;
+    border-radius: 20px;
+    margin-top: 40px;
+    background-color: #80808036;
+}
+.btn-review-service{
+  height: 45px;
+    width: 665px;
+    border-radius: 20px;
+    background-color: #f4f2f2;
+}
+ul li:first-child::marker {
+  content: "";
+}
+#map2 {
+  height: 250px;
+}
+@media (min-width: 768px) {
+  #map2 {
+    height: 445px;
+  }
+}
+.img-card {
+  width: 100%;
+  height: 175px !important;         /* tinggi seragam */
+  object-fit: cover;    /* crop gambar biar rapi */
+  border-radius: 10px;  /* optional biar cantik */
+}
+.img-main {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  
+}
+
+.img-small {
+  width: 100%;
+  height: 175px !important;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: -17px;
+}
+.mt-fasility{
+  margin-top: -145px !important;
+}
+.ms-img-detail-hotel{
+  margin-left: -35px;
+}
+.img-host{
+  height: 70px !important;
+  width: 90px !important;
+  object-fit: cover;    /* crop gambar biar rapi */
+  border-radius: 10px;  /* optional biar cantik */
+}
+.img-service{
+  height: 105px !important;
+  width: 125px !important;
+  object-fit: cover;    /* crop gambar biar rapi */
+  border-radius: 10px;  /* optional biar cantik */
+}
+.box-room {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.img-trip-detail{
+  height: 300px !important;
+  width: 450px !important;
+  object-fit: cover;    /* crop gambar biar rapi */
+  border-radius: 10px;  /* optional biar cantik */
+}
+.img-trip-detail-img2{
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: cover;    /* crop gambar biar rapi */
+  border-radius: 10px;  /* optional biar cantik */
+}
+.img-host-trip-detail{
+  height: 55px !important;
+  width:  55px !important;
+  object-fit: cover;    /* crop gambar biar rapi */
+  border-radius: 10px;  /* optional biar cantik */
+}
+.img-step-detail-trip{
+  height: 75px !important;
+  width:  75px !important;
+  object-fit: cover;    /* crop gambar biar rapi */
+  border-radius: 10px;  /* optional biar cantik */
+}
