@@ -142,7 +142,7 @@ const makeup = ref([]);
 const hair = ref([]);
 
 onMounted(async() => {
-    const res = await axios.get('http://127.0.0.1:8000/api/services')
+    const res = await axios.get(`${import.meta.env.VITE_API_URL}/services`)
 
     spa.value = res.data.spa
     photography.value = res.data.photography

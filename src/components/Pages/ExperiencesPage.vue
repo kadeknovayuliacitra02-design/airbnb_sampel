@@ -204,7 +204,7 @@ const weekday = ref([]);
 const monday = ref([]);
 const airbnb = ref([]);
 onMounted(async () => {
-    const res = await axios.get('http://127.0.0.1:8000/api/experiences')
+    const res = await axios.get(`${import.meta.env.VITE_API_URL}/experiences`)
 
     today.value = res.data.today
     weekend.value = res.data.weekend

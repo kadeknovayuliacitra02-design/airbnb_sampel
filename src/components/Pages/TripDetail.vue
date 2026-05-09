@@ -414,7 +414,7 @@ const createMap = (id, lat, lng) => {
 
 onMounted(async () => {
     const res = await axios.get(
-        `http://127.0.0.1:8000/api/trip_detail/${route.params.id}`
+        `${import.meta.env.VITE_API_URL}/trip_detail/${route.params.id}`
     )
     detail.value = res.data
 

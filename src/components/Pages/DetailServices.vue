@@ -353,7 +353,7 @@ const route = useRoute()
 
 onMounted(async()=>{
     const res = await axios.get(
-        `http://127.0.0.1:8000/api/detail_services/${route.params.id}`
+        `${import.meta.env.VITE_API_URL}/detail_services/${route.params.id}`
     )
     detail.value = res.data
 })
