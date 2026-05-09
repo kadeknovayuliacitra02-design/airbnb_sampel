@@ -709,9 +709,8 @@ const dates = [
 
 onMounted(async () => {
     const res = await axios.get(
-        `${import.meta.env.VITE_API_URL}/detail_hotel/${route.params.id}`
+        `http://127.0.0.1:8000/api/detail_hotel/${route.params.id}`
     )
-
     detail.value = res.data
 })
 </script>
