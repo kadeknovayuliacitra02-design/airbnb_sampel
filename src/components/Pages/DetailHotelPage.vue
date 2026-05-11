@@ -701,7 +701,7 @@ const dates = [
     29, 30
 ]
 // onMounted(() => {
-//     axios.get("http://127.0.0.1:8000/api/hotel")
+//     axios.get("import.meta.env.VITE_API_URL/hotel")
 //         .then(res => {
 //             hotel.value = res.data;
 //         });
