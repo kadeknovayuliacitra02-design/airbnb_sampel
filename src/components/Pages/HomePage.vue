@@ -121,7 +121,7 @@ const kuala_lumpur = ref([])
 const bangkok = ref([])
 
 onMounted(async () => {
-  const res = await axios.get('${import.meta.env.VITE_API_URL}/accomodation')
+  const res = await axios.get(`${import.meta.env.VITE_API_URL}/accomodation`)
 
   jakarta.value = res.data.jakarta
   ubud.value = res.data.ubud
