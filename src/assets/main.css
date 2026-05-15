@@ -15,8 +15,8 @@
   border: 1px solid;
   width: 45px;
   border-radius: 50px;
-  padding: 7px;
-  padding-left: 13px;
+  padding: 10px;
+  padding-left: 15px;
   height: 45px;
   background-color: rgb(239, 19, 19);
 }
@@ -101,7 +101,7 @@
   width: 90px;
   border: 2px solid;
   border-radius: 8px;
-  margin-left: 675px;
+  margin-left: 615px;
 }
 .input-size {
   height: 50px;
@@ -261,117 +261,115 @@
   border-radius: 10px;
   background-color: rgb(234, 233, 233);
 }
-.btn-host-message{
+.btn-host-message {
   width: 285px;
   height: 50px;
   border-radius: 10px;
   background-color: rgb(234, 233, 233);
 }
 
-
 /* BOX PRICE */
 .box-host-detail {
-  position: sticky;   /* INI KUNCI NYA */
-  top: 100px;         /* jarak dari atas saat scroll */
+  position: sticky; /* INI KUNCI NYA */
+  top: 100px; /* jarak dari atas saat scroll */
   width: 350px;
   height: 250px;
   border: 1px solid #ddd;
   border-radius: 15px;
   padding: 20px;
   background: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.mt-space{
+.mt-space {
   margin-top: -26px;
 }
-.mt-host-space{
+.mt-host-space {
   margin-top: -10px;
 }
 .order-wrapper {
   width: 35%;
   padding-left: 30px;
-    margin-left: 715px;
-    margin-top: -260px;
+  margin-left: 715px;
+  margin-top: -260px;
 }
 
 .box-price {
   position: sticky;
-  
+
   width: 375px;
-    height: 415px;
+  height: 415px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 12px;
   background: white;
-  
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .box-price-trip {
   position: sticky;
-  
+
   width: 375px;
   height: 95px;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 12px;
   background: white;
-  
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.btn-date-trip{
+.btn-date-trip {
   color: white;
-    background-color: #e62828;
-    border-radius: 30px;
-    height: 45px;
-    width: 105px;
-    padding-top: 0px;
+  background-color: #e62828;
+  border-radius: 30px;
+  height: 45px;
+  width: 105px;
+  padding-top: 0px;
 }
 .box-dates {
   border: 1px solid;
   padding: 10px;
   border-radius: 15px;
   height: 75px;
-  
 }
-.btn-review{
+.btn-review {
   height: 45px;
-    width: 765px;
-    border-radius: 20px;
-    background-color: #f4f2f2;
+  width: 765px;
+  border-radius: 20px;
+  background-color: #f4f2f2;
 }
-.btn-message-host{
+.btn-message-host {
   height: 45px;
-    width: 350px;
-    border-radius: 10px;
-    background-color: #80808030;
+  width: 350px;
+  border-radius: 10px;
+  background-color: #80808030;
 }
 #map1 {
   height: 45px;
   width: 55px;
 }
-.box-service{
+.box-service {
   position: sticky;
-  
+
   width: 625px;
   height: 135px;
   padding-left: 20px;
   border: 1px solid #ddd;
   border-radius: 12px;
   background: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.btn-show{
-    height: 45px;
-    width: 627px;
-    border-radius: 20px;
-    margin-top: 40px;
-    background-color: #80808036;
-}
-.btn-review-service{
+.btn-show {
   height: 45px;
-    width: 665px;
-    border-radius: 20px;
-    background-color: #f4f2f2;
+  width: 627px;
+  border-radius: 20px;
+  margin-top: 40px;
+  background-color: #80808036;
+}
+.btn-review-service {
+  height: 45px;
+  width: 665px;
+  border-radius: 20px;
+  background-color: #f4f2f2;
 }
 ul li:first-child::marker {
   content: "";
@@ -386,16 +384,15 @@ ul li:first-child::marker {
 }
 .img-card {
   width: 100%;
-  height: 175px !important;         /* tinggi seragam */
-  object-fit: cover;    /* crop gambar biar rapi */
-  border-radius: 10px;  /* optional biar cantik */
+  height: 175px !important; /* tinggi seragam */
+  object-fit: cover; /* crop gambar biar rapi */
+  border-radius: 10px; /* optional biar cantik */
 }
 .img-main {
   width: 100%;
   height: 350px;
   object-fit: cover;
   border-radius: 8px;
-  
 }
 
 .img-small {
@@ -405,50 +402,81 @@ ul li:first-child::marker {
   border-radius: 8px;
   margin-left: -17px;
 }
-.mt-fasility{
+.mt-fasility {
   margin-top: -145px !important;
 }
-.ms-img-detail-hotel{
+.ms-img-detail-hotel {
   margin-left: -35px;
 }
-.img-host{
+.img-host {
   height: 70px !important;
   width: 90px !important;
-  object-fit: cover;    /* crop gambar biar rapi */
-  border-radius: 10px;  /* optional biar cantik */
+  object-fit: cover; /* crop gambar biar rapi */
+  border-radius: 10px; /* optional biar cantik */
 }
-.img-service{
+.img-service {
   height: 105px !important;
   width: 125px !important;
-  object-fit: cover;    /* crop gambar biar rapi */
-  border-radius: 10px;  /* optional biar cantik */
+  object-fit: cover; /* crop gambar biar rapi */
+  border-radius: 10px; /* optional biar cantik */
 }
 .box-room {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-.img-trip-detail{
+.img-trip-detail {
   height: 300px !important;
   width: 450px !important;
-  object-fit: cover;    /* crop gambar biar rapi */
-  border-radius: 10px;  /* optional biar cantik */
+  object-fit: cover; /* crop gambar biar rapi */
+  border-radius: 10px; /* optional biar cantik */
 }
-.img-trip-detail-img2{
+.img-trip-detail-img2 {
   width: 300px !important;
   height: 300px !important;
-  object-fit: cover;    /* crop gambar biar rapi */
-  border-radius: 10px;  /* optional biar cantik */
+  object-fit: cover; /* crop gambar biar rapi */
+  border-radius: 10px; /* optional biar cantik */
 }
-.img-host-trip-detail{
+.img-host-trip-detail {
   height: 55px !important;
-  width:  55px !important;
-  object-fit: cover;    /* crop gambar biar rapi */
-  border-radius: 10px;  /* optional biar cantik */
+  width: 55px !important;
+  object-fit: cover; /* crop gambar biar rapi */
+  border-radius: 10px; /* optional biar cantik */
 }
-.img-step-detail-trip{
+.img-step-detail-trip {
   height: 75px !important;
-  width:  75px !important;
-  object-fit: cover;    /* crop gambar biar rapi */
-  border-radius: 10px;  /* optional biar cantik */
+  width: 75px !important;
+  object-fit: cover; /* crop gambar biar rapi */
+  border-radius: 10px; /* optional biar cantik */
+}
+.m-host {
+  margin-left: 360px;
+}
+.modal-content1 {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 45px;
+  width: 895px;
+  padding: 30px;
+  margin-left: 150px;
+}
+.modal-content2 {
+  width: 885px;
+  padding: 30px;
+  border-radius: 45px;
+}
+.mt-host-modal {
+  margin-top: 70px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 30px;
+}
+.modal-content3 {
+  width: 545px;
+  height: 445px;
+  border-radius: 35px;
+  margin-left: 10px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 30px;
 }

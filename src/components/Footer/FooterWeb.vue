@@ -1,19 +1,19 @@
 <template>
     <div id="bg-footer" class="mt-5">
-        <div class="pt-5">
+        <div class="pt-5 p-3">
             <h3>Inspiration for your next vacation</h3>
-            <div class="d-flex">
-                <p class="">Popular</p>
-                <p class="ms-5">Arts and culture</p>
-                <p class="ms-5">Beach</p>
-                <p class="ms-5">Mountains</p>
-                <p class="ms-5">Open Nature</p>
-                <p class="ms-5">Activity</p>
+            <div class="d-flex flex-wrap gap-3">
+                <p>Popular</p>
+                <p>Arts and culture</p>
+                <p>Beach</p>
+                <p>Mountains</p>
+                <p>Open Nature</p>
+                <p>Activity</p>
             </div>
             <hr>
         </div>
-        <div>
-            <div class="d-flex p-3">
+        <div class="">
+            <div class="d-flex flex-column flex-md-row p-3">
                 <div class="pt-5 me-5">
                     <div>
                         <p><b>Athena</b></p>
@@ -28,7 +28,7 @@
                         <p class="mt-room">Monthly Rent</p>
                     </div>
                 </div>
-                <div class="p-5">
+                <div class="p-2 p-md-5">
                     <div>
                         <p><b>North Myrtle Beach</b></p>
                         <p class="mt-room">Rent Villa</p>
@@ -42,7 +42,7 @@
                         <p class="mt-room">Rent House</p>
                     </div>
                 </div>
-                <div class="p-5">
+                <div class="p-2 p-md-5">
                     <div>
                         <p><b>Nice</b></p>
                         <p class="mt-room">Vacation Rental</p>
@@ -56,7 +56,7 @@
                         <p class="mt-room">Cottage Rent</p>
                     </div>
                 </div>
-                <div class="p-5">
+                <div class="p-2 p-md-5">
                     <div>
                         <p><b>Madrid</b></p>
                         <p class="mt-room">Vacation Rental </p>
@@ -70,7 +70,7 @@
                         <p class="mt-room">Rent Appartment</p>
                     </div>
                 </div>
-                <div class="p-5">
+                <div class="p-2 p-md-5">
                     <div>
                         <p><b>O'ahu</b></p>
                         <p class="mt-room">Rent a Condo</p>
@@ -84,7 +84,7 @@
                         <p class="mt-room">Vacation Rental</p>
                     </div>
                 </div>
-                <div class="p-5">
+                <div class="p-2 p-md-5">
                     <div>
                         <p><b>Port Aransas</b></p>
                         <p class="mt-room">Cottage Rental</p>
@@ -110,7 +110,7 @@
                     <p>Cancellation option</p>
                     <p>report environmental problems</p>
                 </div>
-                <div class="p-5">
+                <div class="p-2 p-md-5">
                     <p><b>Host</b></p>
                     <p>Make your place Airbnb</p>
                     <p>Make your experience Airbnb</p>
@@ -123,7 +123,7 @@
                     <p>Find a co-host</p>
                     <p>Recommend the host</p>
                 </div>
-                <div class="p-5">
+                <div class="p-2 p-md-5">
                     <p><b>Airnb</b></p>
                     <p>Update Mei 2025</p>
                     <p>Newsroom</p>
@@ -134,15 +134,15 @@
             </div>
         </div>
         <hr>
-        <div class="d-flex justify-content-between">
-            <div class="d-flex">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <div class="d-flex flex-wrap gap-3">
                 <p>@2026 Airbnb,Inc.</p>
-                <ul class="d-flex">
+                <ul class="d-flex flex-wrap gap-3">
                     <li>Privasi</li>
                     <li class="ms-4">Provision</li>
                 </ul>
             </div>
-            <div class="d-flex">
+            <div class="d-flex flex-wrap gap-3">
                 <i class="bi bi-globe fs-4 globe-footer "></i>
                 <p class="me-4">Languange()</p>
                 <p class="me-4">Mata Uang()</p>
