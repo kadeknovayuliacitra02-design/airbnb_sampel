@@ -136,7 +136,7 @@
         <hr>
         <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
             <div class="d-flex flex-wrap gap-3">
-                <p>@2026 Airbnb,Inc.</p>
+                <p>@2026 Atravel,Inc.</p>
                 <ul class="d-flex flex-wrap gap-3">
                     <li>Privasi</li>
                     <li class="ms-4">Provision</li>
