@@ -3,7 +3,7 @@
         <div class="container-fluid">
 
             <div class="d-flex align-items-center flex-wrap mt-2 mt-md-0">
-                <img src="@/assets/img/airbnb-logo.png" alt="logo" width="95" height="45">
+                <img src="@/assets/img/airbnb-sampel.png" alt="logo" width="100" height="75">
                 <RouterLink to="/" class="router-style">
                     <h5 class="space-home mb-0">Homes</h5>
                 </RouterLink>
