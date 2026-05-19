@@ -1,6 +1,9 @@
 <template>
+    
     <div class="container">
-        <div>
+        <div
+    v-if="!isSearching || filteredToday.length > 0"
+    class="mt-5">
             <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <h4>popular experiences in Bali</h4>
                 <div class="ms-1 mt-1 box-arrow-right border-0">
@@ -8,7 +11,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-md-4 col-lg-2" v-for="item in today" :key="item.id">
+                <div class="col-6 col-md-4 col-lg-2" v-for="item in filteredToday" :key="item.id">
                     <RouterLink :to="`/detailTrip/${item.id}`" class="box-room p-2 router-style">
                         <img :src="item.img" alt="room1" class="img-fluid img-card">
                         <p><b>{{ item.experience_name }}</b></p>
@@ -21,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div v-if="!isSearching || filteredTomorrow.length > 0">
             <div class="d-flex mt-5">
                 <h4>tomorrow in Bali</h4>
                 <div class="ms-1 mt-1 box-arrow-right border-0">
@@ -29,7 +32,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-md-4 col-lg-2" v-for="item in tomorrow" :key="item.id">
+                <div class="col-6 col-md-4 col-lg-2" v-for="item in filteredTomorrow" :key="item.id">
                     <RouterLink :to="`/detailTrip/${item.id}`" class="box-room p-2 router-style">
                         <img :src="item.img" alt="room1" class="img-fluid img-card">
                         <p><b>{{ item.experience_name }}</b></p>
@@ -42,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div v-if="!isSearching || filteredWeekend.length > 0">
             <div class="d-flex mt-5">
                 <h4>experience for the weekend</h4>
                 <div class="ms-1 mt-1 box-arrow-right border-0">
@@ -50,7 +53,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-md-4 col-lg-2" v-for="item in weekend" :key="item.id">
+                <div class="col-6 col-md-4 col-lg-2" v-for="item in filteredWeekend" :key="item.id">
                     <RouterLink :to="`/detailTrip/${item.id}`" class="box-room p-2 router-style">
                         <img :src="item.img" alt="room1" class="img-fluid img-card">
                         <p><b>{{ item.experience_name }} </b></p>
@@ -63,7 +66,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div v-if="!isSearching || filteredWeekday.length > 0">
             <div class="d-flex mt-5">
                 <h4>All Experiences in Bali</h4>
                 <div class="ms-1 mt-1 box-arrow-right border-0">
@@ -71,7 +74,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-md-4 col-lg-2" v-for="item in weekday" :key="item.id">
+                <div class="col-6 col-md-4 col-lg-2" v-for="item in filteredWeekday" :key="item.id">
                     <RouterLink :to="`/detailTrip/${item.id}`" class="box-room p-2 router-style">
                         <img :src="item.img" alt="room1" class="img-fluid img-card">
                         <p><b>{{ item.experience_name }}</b></p>
@@ -85,7 +88,7 @@
             </div>
         </div>
         <h3 class="mt-5">Popular among tourists from your area</h3>
-        <div>
+        <div v-if="!isSearching || filteredMonday.length > 0">
             <div class="d-flex mt-5">
                 <h4>experience in Denpasar</h4>
                 <div class="ms-1 mt-1 box-arrow-right border-0">
@@ -93,7 +96,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-md-4 col-lg-2" v-for="item in monday" :key="item.id">
+                <div class="col-6 col-md-4 col-lg-2" v-for="item in filteredMonday" :key="item.id">
                     <RouterLink :to="`/detailTrip/${item.id}`" class="box-room p-2 router-style">
                         <img :src="item.img" alt="room1" class="img-fluid img-card">
                         <p><b>{{ item.experience_name }}</b></p>
@@ -106,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div v-if="!isSearching || filteredAirbnb.length > 0">
             <div class="d-flex mt-5">
                 <h4>experience in Kuala Lumpur</h4>
                 <div class="ms-1 mt-1 box-arrow-right border-0">
@@ -114,7 +117,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-md-4 col-lg-2" v-for="item in airbnb" :key="item.id">
+                <div class="col-6 col-md-4 col-lg-2" v-for="item in filteredAirbnb" :key="item.id">
                     <RouterLink :to="`/detailTrip/${item.id}`" class="box-room p-2 router-style">
                         <img :src="item.img" alt="room1" class="img-fluid img-card">
                         <p><b>{{ item.experience_name }}</b></p>
@@ -127,7 +130,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div v-if="!isSearching">
             <div class="d-flex mt-5">
                 <h4>experience in Denpasar</h4>
                 <div class="ms-1 mt-1 box-arrow-right border-0">
@@ -148,7 +151,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div v-if="!isSearching">
             <div class="d-flex mt-5">
                 <h4>experience in Bangkok</h4>
                 <div class="ms-1 mt-1 box-arrow-right border-0">
@@ -169,7 +172,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div v-if="!isSearching">
             <div class="d-flex mt-5">
                 <h4>experience in Tokyo</h4>
                 <div class="ms-1 mt-1 box-arrow-right border-0">
@@ -190,13 +193,18 @@
                 </div>
             </div>
         </div>
+        <div v-if="isSearching && noResult" class="text-center mt-5">
+    <h4>No experience found</h4>
+</div>
     </div>
 
 </template>
 <script setup>
 import axios from "axios";
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
+import { useRoute } from "vue-router";
 
+const route = useRoute()
 const today = ref([]);
 const tomorrow = ref([]);
 const weekend = ref([]);
@@ -214,4 +222,41 @@ onMounted(async () => {
     airbnb.value = res.data.airbnb
 
 });
+const keyword = computed(() => {
+    return String(route.query.location || '')
+        .toLowerCase()
+        .trim()
+})
+
+const isSearching = computed(() => {
+    return keyword.value.length > 0
+})
+const filterData = (data) => {
+    if (!keyword.value) return data.value
+
+    return data.value.filter(item =>
+        (item.city || '').toLowerCase().includes(keyword.value) ||
+        (item.experience_name || '').toLowerCase().includes(keyword.value)
+    )
+}
+const filteredToday = computed(() => filterData(today))
+const filteredWeekend = computed(() => filterData(weekend))
+const filteredTomorrow = computed(() => filterData(tomorrow))
+const filteredWeekday = computed(() => filterData(weekday))
+const filteredMonday = computed(() => filterData(monday))
+const filteredAirbnb = computed(()=>filterData(airbnb))
+
+const noResult = computed(() => {
+    return (
+        filteredToday.value.length === 0 &&
+        filteredWeekend.value.length === 0 &&
+        filteredTomorrow.value.length === 0 &&
+        filteredWeekday.value.length === 0 &&
+        filteredMonday.value.length === 0 &&
+        filteredAirbnb.value.length === 0
+
+    )
+
+})
+
 </script>

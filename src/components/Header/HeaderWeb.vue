@@ -26,20 +26,22 @@
 
         </div>
 
-        <div class="d-flex flex-column p-1 flex-md-row justify-content-between align-items-start align-items-md-center space-location mt-4 box-search gap-3">
+        <div
+            class="d-flex flex-column p-1 flex-md-row justify-content-between align-items-start align-items-md-center space-location mt-4 box-search gap-3">
             <div class="ms-3">
                 <h6>Location</h6>
-                <input type="text" placeholder="find Destination" class="border-0 w-100">
+                <input type="text" placeholder="find Destination" class="border-0 w-100" v-model="searchLocation"
+                    @keyup.enter="handleSearch">
             </div>
             <div class=" ms-md-5 mb-0">
                 <h6>Date</h6>
-                <input type="int" placeholder="add Date" class="border-0 w-100">
+                <input type="date" placeholder="add Date" class="border-0 w-100" v-model="date">
             </div>
             <div class=" ms-md-5 mb-0">
                 <h6>Participant</h6>
-                <input type="text" placeholder="add Guests" class="border-0 w-100">
+                <input type="text" placeholder="add Guests" class="border-0 w-100" v-model="participant">
             </div>
-            <div class=" mb-0 box-icon-search border-0">
+            <div class="mb-0 box-icon-search border-0" @click="handleSearch">
                 <i class="bi bi-search fs-5 color-icon-search"></i>
             </div>
         </div>
@@ -50,7 +52,7 @@
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-xl modal-dialog-centered" role="document">
             <div class="modal-content modal-content1">
-                <button class="btn-close" data-bs-dismiss="modal" ></button>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
                 <div class="modal-body">
                     <div class="d-flex">
                         <p>Language and Region</p>
@@ -271,7 +273,7 @@
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content modal-content3 ">
-                <button class="btn-close mt-4 ms-3" data-bs-dismiss="modal" ></button>
+                <button class="btn-close mt-4 ms-3" data-bs-dismiss="modal"></button>
                 <div class="modal-body">
                     <div class="text-center">
                         <img src="/src/assets/img/logoairbnb.png" alt="logo" width="50px" height="50px">
@@ -291,8 +293,14 @@
     </div>
 </template>
 <script setup>
-import { onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { Modal } from 'bootstrap'
+import { useRouter, useRoute } from 'vue-router'
+
+const router = useRouter()
+const route = useRoute()
+const date = ref('')
+const participant = ref('')
 
 let modalInstance = null
 let modalInstanceLine = null
@@ -305,7 +313,24 @@ onMounted(() => {
     modalHost = new Modal(document.getElementById('modalHost'))
     modalLogin = new Modal(document.getElementById('modalLogin'))
 })
+const searchLocation = ref(route.query.location || '')
+const handleSearch = () => {
+    const search = searchLocation.value.trim()
 
+    router.push({
+        path: route.path,
+        query: search ? { location: search } : {}
+    })
+
+}
+import { watch } from 'vue'
+
+watch(
+    () => route.query.location,
+    (newValue) => {
+        searchLocation.value = newValue || ''
+    }
+)
 
 const openModalLanguange = () => {
     modalInstance.show()
